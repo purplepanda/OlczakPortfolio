@@ -8,7 +8,6 @@ body {
   background-repeat: repeat;
   background-position: left top;
   opacity: 0.95;
-
 }
 
 
@@ -17,6 +16,7 @@ nav {
   list-style-type: none;
   width: 100%;
   height: 70px;
+  font-size: 1.15em;
   background-color: rgba(64,64,64,0.15);
   z-index: 1;
   margin: 25px -15px 5px -15px;
@@ -30,12 +30,58 @@ nav>li {
   font-size: 0.8em;
 }
 
+footer {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  text-align: right;
+  font-size: 0.75em;
+  background-color: rgba(255, 255, 255 ,0.75);
+  margin: 25px -25px;
+}
+
 
 .name {
   font-family: 'PennaRegular';
   font-weight: bold;
   font-style: normal;
   font-size: 2.5em;
+}
+
+
+#content {
+  width: 50%;
+  max-width: 550px;
+  min-width: 300px;
+  height: 450px;
+  background-color: rgba(255, 255, 255, 0.25);
+  display: inline-block;
+  float: left;
+  margin: 1%;
+  padding: 10px;
+  border: 5px solid #ffffff;
+  -moz-box-shadow: 2px 2px 2px #444444;
+  -webkit-box-shadow: 2px 2px 2px #444444;
+  box-shadow: 2px 2px 2px #444444;
+  border-radius: 100px 25px 100px 25px;
+}
+
+
+#sidebar {
+  width: 35%;
+  max-width: 275px;
+  min-width: 200px;
+  height: 300px;
+  background-color: rgba(255, 212, 194, 0.55);
+  display: inline-block;
+  float: left;
+  margin: 1%;
+  padding: 10px;
+  border: 5px solid #ffffff;
+  -moz-box-shadow: 2px 2px 2px #444444;
+  -webkit-box-shadow: 2px 2px 2px #444444;
+  box-shadow: 2px 2px 2px #444444;
+  border-radius: 25px 100px 25px 100px;
 }
 
 
@@ -49,6 +95,7 @@ blockquote {
 
 h1 {
   text-align: center;
+  width: auto;
 }
 
 
@@ -60,6 +107,7 @@ h4 {
 
 p {
   font-size: 0.9em;
+  width: auto;
 }
 
 
@@ -82,7 +130,7 @@ a:hover {
   color: rgba(250, 100, 85, 1.0);
 }
 
-
+/* Index Page */
 #grid {
   display: inline-block;
   float: left;
@@ -99,7 +147,7 @@ a:hover {
 
 .tableimage {
   margin: 5px 10px 5px 10px;
-  opacity: 0.7;
+  opacity: 0.85;
   border: 5px solid #ffffff;
   -moz-box-shadow: 2px 2px 2px #444444;
   -webkit-box-shadow: 2px 2px 2px #444444;
@@ -107,60 +155,18 @@ a:hover {
 }
 
 
-#content {
-  width: 50%;
-  max-width: 550px;
-  min-width: 300px;
-  height: 400px;
-  background-color: rgba(255, 255, 255, 0.25);
-  display: inline-block;
-  float: left;
-  margin: 1%;
-  padding: 10px;
-  border: 5px solid #ffffff;
-  -moz-box-shadow: 2px 2px 2px #444444;
-  -webkit-box-shadow: 2px 2px 2px #444444;
-  box-shadow: 2px 2px 2px #444444;
+/* Button for Contact Page */
+#shared {
+  font-family: 'PennaRegular';
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2.0em;
+  margin: 25%;
 }
 
-
-#sidebar {
-  width: 35%;
-  max-width: 275px;
-  min-width: 200px;
-  height: 200px;
-  background-color: rgba(255, 212, 194, 0.55);
-  display: inline-block;
-  float: left;
-  margin: 1%;
-  padding: 10px;
-  border: 5px solid #ffffff;
-  -moz-box-shadow: 2px 2px 2px #444444;
-  -webkit-box-shadow: 2px 2px 2px #444444;
-  box-shadow: 2px 2px 2px #444444;
-}
-
-
-#contact {
-  width: 80%;
-  max-width: 800px;
-  min-width: 675px;
-  height: auto;
-  display: inline-block;
-  position: relative;
-  float: left;
-  padding: 2.0em;
-  margin: 1.0em 2.5em;
-  background-color: rgba(255, 255, 255, 0.25);
-  border: 5px solid #ffffff;
-  -moz-box-shadow: 2px 2px 2px #444444;
-  -webkit-box-shadow: 2px 2px 2px #444444;
-  box-shadow: 2px 2px 2px #444444;
-}
-
-
+/* Forms for Contact Page */
 fieldset {
-  border: 1px solid black;
+  border: none;
 }
 
 
@@ -172,6 +178,10 @@ legend {
   padding: 0.2em 0.5em;
 }
 
+textarea {
+  max-width: inherit;
+  min-width: 225px;
+}
 
 input {
   background-color: #ffffff;
@@ -181,7 +191,7 @@ input {
   font-weight: bold;
   font-style: normal;
   font-size: 1.0em;
-  display: inline-block;
+  display: block;
   border: none;
   border-radius: 3px;
 }
@@ -195,7 +205,7 @@ input:hover {
   font-weight: bold;
   font-style: normal;
   font-size: 1.0em;
-  display: inline-block;
+  display: block;
   border: none;
   border-radius: 3px;
 }
