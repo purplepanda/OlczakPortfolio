@@ -1,0 +1,41 @@
+header {
+    text-align: center;
+    width: 100%;
+    margin: -25px 0px 15px 0px;
+}
+nav {
+    margin: 0px auto;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 7px;
+    border-radius: 10px;
+    -moz-box-shadow: 2px 2px 2px #444444;
+    -webkit-box-shadow: 2px 2px 2px #444444;
+    box-shadow: 2px 2px 2px #444444;
+}
+nav li {
+    display: inline-block;
+    font-size: 90%;
+    padding: 0px 35px 0px 35px;
+    color: #404040;
+}
+.name {
+    font-family: 'PennaRegular';
+    font-weight: bold;
+    font-style: normal;
+    font-size: 2.6em;
+    color: #ffffff;
+}
+footer {
+    display: inline-block;
+    width: 95%;
+    text-align: center;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.25);
+    padding: 7px;
+    border-radius: 10px;
+    -moz-box-shadow: 2px 2px 2px #444444;
+    -webkit-box-shadow: 2px 2px 2px #444444;
+    box-shadow: 2px 2px 2px #444444;
+    margin: auto;
+}
