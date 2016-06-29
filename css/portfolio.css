@@ -1,14 +1,15 @@
+/* CSS for Portfolio Page only */
 article {
     display: inline-block;
-    width: 32%;
-    min-width: 200px;
+    width: 31%;
     background-color: rgba(255, 255, 255, 0.25);
     /*border: 3px solid #ffffff;*/
     -moz-box-shadow: 2px 2px 2px #444444;
     -webkit-box-shadow: 2px 2px 2px #444444;
     box-shadow: 2px 2px 2px #444444;
-    margin: 0.5%
+    margin: 0.75%
 }
+
 article h2 {
     font-size: 1.5em;
     margin-top: -33px;
@@ -19,18 +20,20 @@ article h2 {
     overflow: hidden;
 }
 article h3 {
-    font-size: 1.1em;
+    font-size: 1.05em;
     margin-top: 0px;
     padding-left: 5px;
     line-height: 1.1em;
     height: 2.2em;
     font-weight: 600;
     overflow: hidden;
+    font-style: italic;
+    font-weight: 700;
 }
 article p {
     overflow: scroll;
     width: 96%;
-    font-size: 0.95em;
+    font-size: 0.9em;
     text-align: justify;
     margin: -15px 0px 5px 5px;
     line-height: 1.15em;
@@ -55,4 +58,38 @@ article a {
 ::-webkit-scrollbar-track-piece {
     background-color: transparent;
     -webkit-border-radius: 6px;
+}
+@media (max-width: 895px) {
+  article {
+    width: 45%;
+    margin: 1%;
+  }
+  article h2 {
+    font-size: 3vw;
+    margin-top: -37px;
+  }
+  article h3 {
+    font-size: 1.9vw;
+  }
+  article p, article a{
+    font-size: 1.75vw;
+  }
+}
+
+@media (max-width: 480px) {
+  article {
+    width: 95%;
+    padding: 1%;
+    margin: 1.5%;
+  }
+  article h2 {
+    font-size: 6vw;
+    margin-top: -40px;
+  }
+  article h3 {
+    font-size: 4vw;
+  }
+  article p, article a{
+    font-size: 3vw;
+  }
 }

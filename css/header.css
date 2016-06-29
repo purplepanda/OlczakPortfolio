@@ -1,3 +1,4 @@
+/* CSS for Header and Footer Element */
 header {
     text-align: center;
     width: 100%;
@@ -12,6 +13,21 @@ nav {
     -moz-box-shadow: 2px 2px 2px #444444;
     -webkit-box-shadow: 2px 2px 2px #444444;
     box-shadow: 2px 2px 2px #444444;
+}
+ul {
+  transition: max-height .25s linear;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+li {
+  /*visibility transition is on li because multiple transition
+  selectors is not well supported*/
+  transition: visibility .25s linear;
+  display: inline-block;
+  /*border: 1px solid;*/
+  padding: .45em 1.1em;
+  margin: 0 .3em;
 }
 nav li {
     display: inline-block;
@@ -38,4 +54,19 @@ footer {
     -webkit-box-shadow: 2px 2px 2px #444444;
     box-shadow: 2px 2px 2px #444444;
     margin: auto;
+}
+@media (max-width: 895px) {
+  h1 {
+      font-size: 3vw;
+  }
+  .name {
+      font-size: 7vw;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 4vw;
+  }
+  .name {
+      font-size: 9vw;
 }

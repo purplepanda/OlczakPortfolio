@@ -5,8 +5,8 @@
 }
 body {
     width: 100%;
-    max-width: 960px;
-    min-width: 500px;
+    max-width: 1024px;
+    min-width: 320px;
     margin: auto;
     background-color: #e74c3c;
     background-image: -moz-linear-gradient(-45deg, #e74c3c, #ff9800);
@@ -21,15 +21,15 @@ body {
     padding: 5px;
 }
 #content {
-    width: 60%;
-    max-width: 550px;
+    width: 55%;
+    /*max-width: 550px;
     min-width: 300px;
-    height: 450px;
+    height: 450px;*/
     background-color: rgba(255, 255, 255, 0.25);
     display: inline-block;
     float: left;
-    margin: 1%;
-    padding: 10px;
+    margin: 0.75%;
+    padding: 3%;
     border: 5px solid #ffffff;
     -moz-box-shadow: 2px 2px 2px #444444;
     -webkit-box-shadow: 2px 2px 2px #444444;
@@ -37,15 +37,15 @@ body {
     border-radius: 100px 25px 100px 25px;
 }
 #sidebar {
-    width: 35%;
-    max-width: 275px;
+    width: 25%;
+    /*max-width: 275px;
     min-width: 200px;
-    height: 300px;
-    background-color: rgba(255, 212, 194, 0.55);
+    height: 300px;*/
+    background-color: rgba(255, 212, 194, 0.35);
     display: inline-block;
     float: left;
-    margin: 1%;
-    padding: 10px;
+    margin: 0.75%;
+    padding: 3%;
     border: 5px solid #ffffff;
     -moz-box-shadow: 2px 2px 2px #444444;
     -webkit-box-shadow: 2px 2px 2px #444444;
@@ -102,16 +102,14 @@ a:hover {
 }
 img.large {
     width: 28%;
-    min-width: 150px;
     display: inline-block;
     margin: 1%;
-    opacity: 0.75;
+    opacity: 0.80;
     border: 5px solid #ffffff;
     -moz-box-shadow: 2px 2px 2px #444444;
     -webkit-box-shadow: 2px 2px 2px #444444;
     box-shadow: 2px 2px 2px #444444;
 }
-
 /* Button for Contact Page */
 
 #shared {
@@ -161,4 +159,73 @@ input:hover {
     display: block;
     border: none;
     border-radius: 3px;
+}
+/* Responsive CSS */
+@media (max-width: 895px) {
+  img.large {
+    width: 40%;
+    margin: 2.5%;
+  }
+  #grid img:nth-child(3) {
+    display: none;
+  }
+  h2 {
+    font-size: 2.5vw;
+  }
+  h3 {
+    font-size: 2vw;
+    font-style: italic;
+    font-weight: 700;
+  }
+  p {
+    font-size: 1.75vw;
+  }
+  ol li a {
+    font-size: 2.5vw;
+  }
+  #content {
+    width: 70%;
+    margin-left: 10%;
+    border-radius: 25px 100px 25px 100px;
+    padding: 5%;
+  }
+  #sidebar {
+    width: 35%;
+    float: right;
+    margin-right: 8.75%;
+    padding: 5%;
+    border-radius: 100px 25px 100px 25px;
+  }
+}
+@media (max-width: 480px) {
+  img.large {
+    width: 80%;
+    margin: 5%;
+  }
+  #grid img:nth-child(2) {
+    display: none;
+  }
+  h2{
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 3.5vw;
+  }
+  p {
+    font-size: 3vw;
+  }
+  ol li a {
+    font-size: 4vw; 
+  }
+  #content {
+    width: 80%;
+    margin-left: 2%;
+    border-radius: 75px 25px;
+  }
+  #sidebar {
+    width: 80%;
+    float: left;
+    margin-left: 2%;
+    border-radius: 25px 75px;
+  }
 }
